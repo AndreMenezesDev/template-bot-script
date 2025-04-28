@@ -102,7 +102,8 @@ function criarBarra(var_nome, var_avatar) {
         link.id   = cssId;
         link.rel  = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/gh/igorlemoes/template_typebot_whatsapp/style.css';
+        //link.href = 'https://cdn.jsdelivr.net/gh/igorlemoes/template_typebot_whatsapp/style.css';
+        link.href = 'https://github.com/AndreMenezesDev/template-bot-script/blob/main/style.css';
         link.media = 'all';
         head.appendChild(link);
     }
