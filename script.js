@@ -53,8 +53,7 @@ function criarBarra(var_nome, var_avatar) {
   const status = varStatus;
   
   const audioNot = document.createElement('audio');
-  //audioNot.src = 'https://github.com/igorlemoes/template_typebot_whatsapp/raw/main/audio_whatsapp.mp3';
-  audioNot.src = 'https://github.com/AndreMenezesDev/template-bot-script/blob/main/audio_whatsapp.mp3';
+  audioNot.src = 'https://github.com/igorlemoes/template_typebot_whatsapp/raw/main/audio_whatsapp.mp3';
   let mensagesLength = 0;
   
   setInterval(() => {
@@ -94,17 +93,14 @@ function criarBarra(var_nome, var_avatar) {
   
   }, 400)
   
-  var cssId = 'myCss';  // you could encode the css path itself to generate id..
-  if (!document.getElementById(cssId))
-    {
-        var head  = document.getElementsByTagName("typebot-standard")[0].shadowRoot.querySelector('.typebot-container');
-        var link  = document.createElement('link');
-        link.id   = cssId;
-        link.rel  = 'stylesheet';
-        link.type = 'text/css';
-        //link.href = 'https://cdn.jsdelivr.net/gh/igorlemoes/template_typebot_whatsapp/style.css';
-        link.href = 'https://github.com/AndreMenezesDev/template-bot-script/blob/main/style.css';
-        link.media = 'all';
-        head.appendChild(link);
-    }
+  var cssId = 'myCss';
+  if (!document.getElementById(cssId)) {
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://cdn.jsdelivr.net/gh/igorlemoes/template_typebot_whatsapp/style.css';
+    link.media = 'all';
+    document.head.appendChild(link); // Corrigido: adiciona ao <head> do documento
   }
+}
