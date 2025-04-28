@@ -53,7 +53,8 @@ function criarBarra(var_nome, var_avatar) {
   const status = varStatus;
   
   const audioNot = document.createElement('audio');
-  audioNot.src = 'https://github.com/igorlemoes/template_typebot_whatsapp/raw/main/audio_whatsapp.mp3';
+  //audioNot.src = 'https://github.com/igorlemoes/template_typebot_whatsapp/raw/main/audio_whatsapp.mp3';
+  audioNot.src = 'https://github.com/AndreMenezesDev/template-bot-script/blob/main/audio_whatsapp.mp3';
   let mensagesLength = 0;
   
   setInterval(() => {
